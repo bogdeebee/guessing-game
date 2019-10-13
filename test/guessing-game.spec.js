@@ -40,27 +40,27 @@ describe('#guess', () => {
         const game = new GuessingGame();
         game.setRange(0, 3445)
 
-        let result = game.guess(); // 1723 
-        game.lower(); // max 1722
-        result = game.guess(); // 861
-        game.lower(); // max 860
-        result = game.guess(); // 430
-        game.lower(); // 429 max 
-        result = game.guess(); // 215
-        game.greater(); // min 216
-        result = game.guess(); // 323
-        game.lower(); // max 322
-        result = game.guess(); // 269
-        game.greater(); // min 270
-        result = game.guess(); // 296
-        game.lower(); // max 295
-        result = game.guess(); // 283
-        game.lower(); // max 282
-        result = game.guess(); // 276
-        game.greater(); // min 277
-        result = game.guess(); // 280
-        game.lower(); // max 279
-        result = game.guess(); // 278 
+        let result = game.guess();
+        game.lower();
+        result = game.guess();
+        game.lower();
+        result = game.guess();
+        game.lower();
+        result = game.guess();
+        game.greater();
+        result = game.guess();
+        game.lower();
+        result = game.guess();
+        game.greater();
+        result = game.guess();
+        game.lower();
+        result = game.guess();
+        game.lower();
+        result = game.guess();
+        game.greater();
+        result = game.guess();
+        game.lower();
+        result = game.guess();
 
         expect(result).to.equal(number);
     });
